@@ -43,3 +43,9 @@
   * Z = Z * 2 * (root(e * (1-e)))
   * care about e<0.5
 
+
+* Improve:
+ * Reduced cost of calculating the gain for each split
+ * Feature Parallel, each worker hold full data(reduce communication)
+ * Data Parallel, merge histograms of different (non-overlapping) features for different workers and histogram subtraction.
+ * Reduce memory usage
